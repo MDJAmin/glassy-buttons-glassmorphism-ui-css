@@ -8,25 +8,10 @@
         #0000 59%
       )
       0 calc(128px / 2),
-    radial-gradient(
-        farthest-side at 50% 133.33%,
-        #0000 52%,
-        #ba0c2e 54% 57%,
-        #0000 59%
-      )
+    radial-gradient(farthest-side at 50% 133.33%, #0000 52%, #ba0c2e 54% 57%, #0000 59%)
       calc(128px / 2) 0,
-    radial-gradient(
-      farthest-side at 133.33% 50%,
-      #0000 52%,
-      #ba0c2e 54% 57%,
-      #0000 59%
-    ),
-    radial-gradient(
-      farthest-side at 50% -33.33%,
-      #0000 52%,
-      #ba0c2e 54% 57%,
-      #0000 59%
-    ),
+    radial-gradient(farthest-side at 133.33% 50%, #0000 52%, #ba0c2e 54% 57%, #0000 59%),
+    radial-gradient(farthest-side at 50% -33.33%, #0000 52%, #ba0c2e 54% 57%, #0000 59%),
     #ff0134;
   background-size: calc(128px / 4.667) 128px, 128px calc(128px / 4.667);
   margin: 0;
@@ -48,7 +33,7 @@ body {
   gap: 10em;
 }
 
-button{
+button {
   cursor: pointer !important;
 }
 
@@ -56,6 +41,7 @@ button{
 
 .glassy-happy {
   all: unset;
+  position: relative;
   text-align: center;
   transition: 0.2s ease-in-out;
   padding: 0.5em 0.8em;
@@ -65,8 +51,7 @@ button{
   font-size: 3em;
   color: hsl(var(--h) var(--s) var(--l) / 0.5);
   text-shadow: 0.05em 0.05em 0 #fff3, -0.05em -0.05em 0 #0003;
-  box-shadow: 0 -0.125em 0.25em #0002,
-    0 0.25em 0.25em hsl(var(--h) var(--s) var(--l) / 0.5),
+  box-shadow: 0 -0.125em 0.25em #0002, 0 0.25em 0.25em hsl(var(--h) var(--s) var(--l) / 0.5),
     0 0 0 0.1em hsl(var(--h) var(--s) var(--l) / 0.5),
     0 0.175em 0.3em hsl(var(--h) var(--s) var(--l) / 0.5) inset,
     0 -0.025em 0.175em hsl(var(--h) var(--s) var(--l) / 0.4) inset,
@@ -76,8 +61,7 @@ button{
 }
 .glassy-happy:active {
   backdrop-filter: blur(0.02em);
-  box-shadow: 0 -0.125em 0.25em #0002,
-    0 0.25em 0.25em hsl(var(--h) var(--s) var(--l) / 0.5),
+  box-shadow: 0 -0.125em 0.25em #0002, 0 0.25em 0.25em hsl(var(--h) var(--s) var(--l) / 0.5),
     0 0 0 0.1em hsl(var(--h) var(--s) var(--l) / 0.5),
     0 0.175em 0.3em hsl(var(--h) var(--s) var(--l) / 0.8) inset,
     0 -0.025em 0.175em hsl(var(--h) var(--s) var(--l) / 0.4) inset,
@@ -126,6 +110,7 @@ button{
 
 .glassy-sad {
   all: unset;
+  position: relative;
   --h: 333;
   text-align: center;
   transition: 0.2s ease-in-out;
@@ -138,8 +123,7 @@ button{
   border-radius: 0.25em;
   box-shadow: inset 0 0.1em 0 0.06em hsl(var(--h) var(--s) var(--l) / 0.4),
     inset 0 0 0.1em 0.1em hsl(var(--h) var(--s) var(--l) / 0.4),
-    0 -0.4em 0 hsl(var(--h) var(--s) var(--l) / 0.4) inset,
-    0 1em 0.5em -0.25em #0004;
+    0 -0.4em 0 hsl(var(--h) var(--s) var(--l) / 0.4) inset, 0 1em 0.5em -0.25em #0004;
   backdrop-filter: blur(0.05em);
   position: relative;
 }
@@ -147,8 +131,7 @@ button{
   backdrop-filter: blur(0.02em);
   box-shadow: inset 0 0.1em 0 0.06em hsl(var(--h) var(--s) var(--l) / 0.4),
     inset 0 0 0.1em 0.1em hsl(var(--h) var(--s) var(--l) / 0.4),
-    0 -0.4em 0 hsl(var(--h) var(--s) var(--l) / 0.4) inset,
-    0 0.7em 0.5em -0.25em #0004;
+    0 -0.4em 0 hsl(var(--h) var(--s) var(--l) / 0.4) inset, 0 0.7em 0.5em -0.25em #0004;
   translate: 0 0.1em;
 }
 .glassy-sad:before {
